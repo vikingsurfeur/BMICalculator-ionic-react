@@ -1,6 +1,7 @@
 /* Import Ionic Component */
 import { IonLabel, IonSegment, IonSegmentButton } from "@ionic/react";
 
+/* InputControl Component */
 const InputControl: React.FC<{
     selectedValue: "mkg" | "ftlbs";
     onSelectedValue: (value: "mkg" | "ftlbs") => void;

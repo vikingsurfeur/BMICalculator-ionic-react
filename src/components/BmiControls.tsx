@@ -4,6 +4,7 @@ import { IonRow, IonCol, IonButton, IonIcon } from "@ionic/react";
 /* Import Icons from ionicons */
 import { calculatorOutline, refreshOutline } from "ionicons/icons";
 
+/* BmiControls Component */
 const BmiControls: React.FC<{
     calculateBMI: () => void;
     resetFields: () => void;

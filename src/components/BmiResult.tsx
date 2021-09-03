@@ -1,6 +1,7 @@
 /* Import Ionic Component */
 import { IonRow, IonCol, IonCard } from "@ionic/react";
 
+/* BmiResult Component */
 const BmiResult: React.FC<{ calculatedBmi: number }> = ({ calculatedBmi }) => {
     return (
         <IonRow>
