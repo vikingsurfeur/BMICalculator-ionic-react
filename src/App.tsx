@@ -2,6 +2,7 @@
 import { useRef, useState } from "react";
 
 /* Import Components */
+import Header from "./components/Header";
 import BmiControls from "./components/BmiControls";
 import BmiResult from "./components/BmiResult";
 import InputControl from "./components/InputControl";
@@ -12,12 +13,9 @@ import {
     IonCol,
     IonContent,
     IonGrid,
-    IonHeader,
     IonInput,
     IonLabel,
     IonRow,
-    IonTitle,
-    IonToolbar,
     IonItem,
     IonAlert,
 } from "@ionic/react";
@@ -95,13 +93,7 @@ const App: React.FC = () => {
                 buttons={[{ text: "Okay...", handler: clearError }]}
             />
             <IonApp>
-                <IonHeader>
-                    <IonToolbar color="primary">
-                        <IonTitle className="ion-text-center">
-                            BMI Calculator
-                        </IonTitle>
-                    </IonToolbar>
-                </IonHeader>
+                <Header />
                 <IonContent className="ion-padding">
                     <IonGrid>
                         <IonRow>
